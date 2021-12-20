@@ -1,0 +1,4 @@
+git clone --bare git@github.com/arrocke/dotfiles $HOME/.dotfiles
+alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+dotf checkout
+dotf config --local status.showUntrackedFiles no
